@@ -1,0 +1,24 @@
+import React from 'react'
+import './Developer.css'
+import Terminal from '../../images/terminal.png'
+
+
+const Developer = () => {
+  return (
+    <div className='developer'>
+    <div className='container'>
+        <div className='left'>
+        <h2>Superpowers for DEFI developers</h2>
+        <p>Checkout the <span className='blue'>Documentation</span>, the <span className='blue'>quick start</span> or a guide below to integrate your project with thousands of token and bilion of liquidity</p>
+        </div>
+        <div className='right'>
+        <div className='img-container'>
+            <img src={Terminal} alt='' />
+        </div>
+    </div>
+    </div>
+    </div>
+  )
+}
+
+export default Developer

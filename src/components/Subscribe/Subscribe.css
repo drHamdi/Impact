@@ -1,0 +1,51 @@
+.Subscrib {
+    background-color: rgba(0, 0, 0. 8);
+    color: #f8f8f8;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+.Subscrib:before {
+    content: '';
+    background: url(../../images/subscribe.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.Subscrib .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.Subscrib .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+.Subscrib input {
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 120px;
+}
+.Subscrib .form-container input[type='checkbox'] {
+    margin-right: .5rem;
+}
+
+@media screen and (max-width:495px) {
+    .Subscrib .display-col {
+        flex-direction: column;
+    }
+    .Subscrib .btn {
+        margin-top: 10px;
+    } 
+}

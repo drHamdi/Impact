@@ -1,0 +1,39 @@
+.developer {
+    background-color: #000;
+    height:70vh;
+}
+.developer .container {
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.developer .left {
+    color: #f8f8f8f8;
+    margin: auto;
+    padding: 1rem;
+}
+.developer .right {
+    background-color: #000;
+}
+.img-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+.developer img {
+    width: 320px;
+    box-shadow: 0 0 12px var(--primary-blue);
+}
+
+@media screen and (max-width:940px) {
+    .developer .container {
+        flex-direction: column;
+    }
+    .developer .right {
+        margin: 3rem 0;
+    }
+}
